@@ -4,5 +4,30 @@ using UnityEngine;
 
 public abstract class CharacterObject : MonoBehaviour
 {
-    //プレイヤー以外のキャラ、例えばCPUなどにも共通した機能を持たせたい場合ここに追加しましょう。
+    protected Command firstCommand = new CommandMove(0,0);
+    protected Command lastCommand = new CommandMove(0,0);
+    protected bool isRelpaying = false;
+    
+    public void setIsReplaying(bool boolIsplaying)
+    {
+        this.isRelpaying = boolIsplaying;
+    }
+
+    public Command getFirstCommand()
+    {
+        return this.firstCommand;
+    }
+    public void setFirstCommand(Command command)
+    {
+        this.firstCommand = command;
+    }
+
+    public Command getLastCommand()
+    {
+        return this.lastCommand;
+    }
+    public void setLastCommand(Command command)
+    {
+        this.lastCommand = command;
+    }
 }

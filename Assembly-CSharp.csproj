@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3A274CF2-8328-0128-47E5-5A7313BFE167}</ProjectGuid>
+    <ProjectGuid>{ACA62FD1-75D5-740F-D4AE-6F20001C3073}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,36 +47,39 @@
   <ItemGroup>     <Compile Include="Assets\Script\CharacterObject.cs" />
      <Compile Include="Assets\Script\Command.cs" />
      <Compile Include="Assets\Script\CommandMove.cs" />
+     <Compile Include="Assets\Script\CommandRedo.cs" />
+     <Compile Include="Assets\Script\CommandReplay.cs" />
+     <Compile Include="Assets\Script\CommandUndo.cs" />
      <Compile Include="Assets\Script\Definition.cs" />
      <Compile Include="Assets\Script\InputHandler.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\PlayerInputHandler.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/daikichi/Documents/GameProgrammingProject1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/daikichi/Documents/GameProgrammingProject1-answer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

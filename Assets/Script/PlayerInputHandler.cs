@@ -16,18 +16,18 @@ public class PlayerInputHandler : InputHandler
         Command commandUp,
         Command commandLeft,
         Command commandRight,
-        Command commandDown
-        //Command commandZ,
-        //Command commandR,
-        //Command commandSpace
+        Command commandDown,
+        Command commandZ,
+        Command commandR,
+        Command commandSpace
     ){
         this.commandUp = commandUp;
         this.commandLeft = commandLeft;
         this.commandRight = commandRight;
         this.commandDown = commandDown;
-        //this.commandZ = commandZ;
-        //this.commandR = commandR;
-        //this.commandSpace = commandSpace;
+        this.commandZ = commandZ;
+        this.commandR = commandR;
+        this.commandSpace = commandSpace;
     }
 
     public override Command handleInput()
@@ -40,14 +40,12 @@ public class PlayerInputHandler : InputHandler
             return commandRight.deepCopy();
         if(Input.GetKeyDown(KeyCode.DownArrow))
             return commandDown.deepCopy();
-        /*
         if(Input.GetKeyDown(KeyCode.Z))
             return commandZ.deepCopy();
         if(Input.GetKeyDown(KeyCode.R))
             return commandR.deepCopy();
         if(Input.GetKeyDown(KeyCode.Space))
             return commandSpace.deepCopy();
-        */
 
         return null;
     }
