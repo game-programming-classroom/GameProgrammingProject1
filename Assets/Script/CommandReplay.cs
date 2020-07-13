@@ -23,9 +23,10 @@ public class CommandReplay : Command
         while(true)
         {
             await Task.Delay(20);
-            //ここにスタート位置に戻るための処理を書く
+            commandPointer.undo(character);
             if(commandPointer.getBeforeCommand() != null){
-            
+                commandPointer = commandPointer.getBeforeCommand();
+                character.setLastCommand(commandPointer);
             }else{
                 break;
             }
@@ -36,9 +37,10 @@ public class CommandReplay : Command
         while(true)
         {
             await Task.Delay(300);
-            //ここにリプレイを再生するための処理を書く
+            commandPointer.execute(character);
+            commandPointer = commandPointer.getNextCommand();
             if(commandPointer != null){
-
+                character.setLastCommand(commandPointer);
             }else{
                 break;
             }

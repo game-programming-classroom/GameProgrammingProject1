@@ -19,7 +19,8 @@ public class CommandRedo : Command
         Command command = character.getLastCommand();
         if(command != null && command.getNextCommand() != null)
         {
-            //ここにRedoのための処理を書く
+            command.getNextCommand().execute(character);
+            character.setLastCommand(command.getNextCommand());
         }
     }
     
